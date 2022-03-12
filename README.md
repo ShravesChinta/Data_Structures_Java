@@ -23,7 +23,7 @@ a) javac Filename.java( it will create Filename.class file)
 b) java Filename
 
 
-**Graphs **
+**Graphs**
 
 Here we will learn about Graphs in Java. Graphs can be implemented in many ways either Adjacency Matrix or Using Adjacency List. 
 There are many types of Graphs 
