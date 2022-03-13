@@ -13,5 +13,6 @@ There are many types of Graphs
 **Graphs are represented either in Adjacency Matrix or in Adjacency List**
 Programs covered are :
 
-1) Java Program to convert Adjacency Matrix to Adjacency List
-2) Java Program to do BFS traversal of a Graph Iterative Method 
+1) Java Program to convert Adjacency List to Adjacency Matrix
+2) Java Program to convert Adjacency Matrix to Adjacency List
+3) Java Program to do BFS traversal of a Graph Iterative Method 
