@@ -1,0 +1,14 @@
+Similarly, which collection is faster for searching in Java?
+
+If you need fast access to elements using index, ArrayList should be choice. If you need fast access to elements using a key, use HashMap. If you need fast add and removal of elements, use LinkedList (but it has a very poor seeking performance).
+
+
+Similarly, which is faster set or list in Java? Sets are faster than Lists if you have a large data set, while the inverse is true for smaller data sets.
+
+In this manner, which map is faster in Java?
+
+HashMap will generally be fastest, since it has the best cache behavior ( HashMap iterates directly over the backing array, whereas TreeMap and LinkedHashMap iterate over linked data structures).
+
+Is HashSet faster than ArrayList?
+
+It depends upon the usage of the data structure. You are storing the data in HashSet , and for your case for storage HashSet is better than ArrayList (as you do not want duplicate entries). It depends as how you wish to read and process the stored data.
