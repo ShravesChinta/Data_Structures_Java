@@ -12,3 +12,7 @@ HashMap will generally be fastest, since it has the best cache behavior ( HashMa
 Is HashSet faster than ArrayList?
 
 It depends upon the usage of the data structure. You are storing the data in HashSet , and for your case for storage HashSet is better than ArrayList (as you do not want duplicate entries). It depends as how you wish to read and process the stored data.
+
+
+
+credit source : https://askinglot.com/which-java-collection-is-fastest#:~:text=Is%20HashSet%20faster%20than%20ArrayList%3F%20It%20depends%20upon,wish%20to%20read%20and%20process%20the%20stored%20data.
