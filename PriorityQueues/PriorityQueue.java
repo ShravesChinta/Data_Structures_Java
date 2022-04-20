@@ -37,3 +37,25 @@ public class Main
 	    System.out.println("__________________________");
 	}
 }
+
+/***
+
+Output:
+The min Heap is [1, 3, 5, 8, 4, 7, 6, 10, 9]
+The max Heap is [10, 9, 7, 8, 3, 5, 6, 1, 4]
+__________________________
+The size of min Heap is 9
+The size of max Heap is 9
+__________________________
+The minimum value of min Heap is 1
+The maximum value of max Heap is 10
+The minimum value of min Heap1
+__________________________
+The size of the min Heap is 8
+__________________________
+The Maximum value in the queue is 10
+The size of max Heap is 8
+__________________________
+
+
+***/
