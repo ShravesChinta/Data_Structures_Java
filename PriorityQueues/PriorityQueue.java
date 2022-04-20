@@ -35,6 +35,11 @@ public class Main
 	    System.out.println("The Maximum value in the queue is " + maxHeap.poll());
 	    System.out.println("The size of max Heap is " + maxHeap.size());
 	    System.out.println("__________________________");
+		//iterating through the priority queue
+	    Iterator it=minHeap.iterator();
+	    System.out.println("__________________________");
+	    while(it.hasNext())
+	    System.out.println(it.next());
 	}
 }
 
@@ -56,6 +61,14 @@ __________________________
 The Maximum value in the queue is 10
 The size of max Heap is 8
 __________________________
-
+__________________________
+3
+4
+5
+8
+9
+7
+6
+10
 
 ***/
