@@ -12,6 +12,7 @@ Program to perform basic operations in Linked list
 8) Print the list in reverse order
 9) Display the List 
 10) Rempove duplicates from the list
+11) Reverse the list iteratively
 
 
 
@@ -219,9 +220,28 @@ public void display(Node root)
     }
 }
 
+
+public  Node reverseListI(Node root)
+{
+    Node next=null;
+    Node curr=root;
+    Node prev=null;
+    if(root==null)
+    return prev;
+    
+    while(curr!=null)
+    {
+        next=curr.next;
+        curr.next=prev;
+        prev=curr;
+        curr=next;
+        
+    }
+    return prev;
 }
 
 
+}
 public class Main
 {
 	public static void main(String[] args) {
@@ -242,8 +262,8 @@ public class Main
 		System.out.println("Linked List  reverse display");
 		l.reversePrint(l.root);
 		System.out.println(" ");
-	  System.out.println("Linked List before removing duplicates");
-	  l.display(l.root);
+	    System.out.println("Linked List before removing duplicates");
+	    l.display(l.root);
 		System.out.println("Linked List after removing duplicates");
 		l.removeDuplicates();
 		l.display(l.root);
@@ -265,9 +285,41 @@ public class Main
 		System.out.println("Delete by some particular value");
 		l.deleteByValue(66);
 		l.display(l.root);
-		
+		System.out.println("Element after reversing the list iterative method");
+		l.display(l.reverseListI(l.root));
+	
+	
 		
 		
 	}
 }
 
+/**
+
+Output:
+
+Linked List display
+8 - >8 - >8 - >5 - >4 - >3 - >2 - >2 - >1 - >25 - > 
+Linked List  reverse display
+25 - >1 - >2 - >2 - >3 - >4 - >5 - >8 - >8 - >8 - > 
+Linked List before removing duplicates
+8 - >8 - >8 - >5 - >4 - >3 - >2 - >2 - >1 - >25 - > 
+Linked List after removing duplicates
+8 - >5 - >4 - >3 - >2 - >1 - >25 - > 
+Insert at some pos
+8 - >5 - >4 - >3 - >66 - >2 - >1 - >25 - > 
+Insert at some pos
+8 - >5 - >4 - >3 - >66 - >2 - >1 - >25 - >100 - > 
+Delete at Beg
+5 - >4 - >3 - >66 - >2 - >1 - >25 - >100 - > 
+Delete at the end
+5 - >4 - >3 - >66 - >2 - >1 - >25 - > 
+Delete at some position
+5 - >4 - >3 - >66 - >1 - >25 - > 
+Delete by some particular value
+Element found
+5 - >4 - >3 - >1 - >25 - > 
+Element after reversing the list iterative method
+25 - >1 - >3 - >4 - >5 - > 
+
+**/
