@@ -53,3 +53,6 @@ class Solution {
         return true;
     }
 }
+
+
+//Note : here earlier I tried to compare both the map values directly by using if(map1.get(x)!=map2.get(x)), but even though the values are same, it was returning me false. Hence I had to first get the values and the compare.
